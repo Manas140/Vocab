@@ -13,8 +13,6 @@ module.exports = {
       'gray-light': '#353535',
       'gray': '#222222',
       'white': "#d8d3d3",
-      'red': '#B66467',
-      'blue': '#8AA6A2',
     },
     extend: {
       keyframes: {

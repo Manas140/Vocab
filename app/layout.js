@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
             <Link href="/" className='like font-bold'>.Vocab</Link>
           </ul>
           <ul className='flex gap-10 text-gray-light'>
-            <ActiveLink href="/saved" name="Saved" />
-            <ActiveLink href="/about" name="About" />
+            <ActiveLink href="/saves">Saves</ActiveLink>
+            <ActiveLink href="/about">About</ActiveLink>
           </ul>
         </nav>
         {children}

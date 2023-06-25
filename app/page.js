@@ -44,6 +44,15 @@ export default function Home() {
 
   return(
     <main className='grid mb-40'>
+    {/* {
+      (JSON.parse(localStorage.getItem("Saved")).length < 1)? 
+      (
+        <div className='bg-gray-dark border-b-2 border-gray text-center p-2'>
+          <p>Double Click To Like</p>
+        </div>
+      )
+      : ( <></> )
+    } */}
     {
       (loading && list.length == 0)? (
         <Loading></Loading>
