@@ -37,7 +37,7 @@ export default function Home() {
   }, [])
   
   useEffect(() => {
-    setScroll(window.pageYOffset - 10)
+    setScroll(window.scrollY - 10)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll);
   }, [loading])

@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body>
+      <body className='h-min-screen'>
         <nav className='p-5 border-b-2 border-gray flex justify-around'>
           <ul>
             <Link href="/" className='like font-bold'>.Vocab</Link>

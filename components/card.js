@@ -53,7 +53,6 @@ export default function Card({word, def}) {
           {/* <br /> */}
           {/* <a href={`https://www.google.com/search?q=define+${word}`} className="text-md font-bold text-blue" >Learn More</a> */}
         </p>
-        {/* <b className={`relative bottom-5 left-[85%] text-3xl like w-fit ${like? ('animate-like') : ('animate-none')}`}>{like? ( ' ♥︎ ‎' ) : ( "" )}</b> */}
         <button onClick={toggle} className={`relative bottom-5 left-[85%] text-3xl text-gray-light transition-all hover:text-white w-fit ${like? ('animate-like') : ('animate-none')}`}>{like? ( <MdFavorite style={{ fill: "url(#like)" }} ></MdFavorite> ) : ( <MdFavoriteBorder></MdFavoriteBorder> )}</button>
       </button>
     // </button>
