@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/kv": "^0.2.1",
     "autoprefixer": "10.4.14",
     "next": "13.4.4",
     "postcss": "8.4.24",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
+    "react-icons": "^4.12.0",
     "server-only": "^0.0.1",
     "tailwindcss": "3.3.2"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

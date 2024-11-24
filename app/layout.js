@@ -1,26 +1,17 @@
+import 'server-only';
+import { Poppins } from 'next/font/google'
 import './globals.css'
-import Link from 'next/link'
-import ActiveLink from '@/components/alink'
+const poppins = Poppins({ subsets: ['latin'], weight: ['300', '500'] })
 
 export const metadata = {
-  title: '.Vocab',
-  description: 'A Words Database',
+  title: 'dotVocab',
+  description: 'Finding words made pretty, and easy.',
 }
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
-      <body className='h-min-screen'>
-        <nav className='p-5 border-b-2 border-gray flex justify-around'>
-          <ul>
-            <Link href="/" className='like font-bold'>.Vocab</Link>
-          </ul>
-          <ul className='flex gap-10 text-gray-light'>
-            <ActiveLink href="/saves">Saves</ActiveLink>
-            <ActiveLink href="/about">About</ActiveLink>
-          </ul>
-        </nav>
+      <body className={`${poppins.className} text-fg bg-bg`}>
         {children}
       </body>
     </html>
