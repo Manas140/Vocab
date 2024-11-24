@@ -27,13 +27,20 @@ const Page = () => {
     }
 
     setTypingTimeout(setTimeout(async () => {
-      if (value.trim().length >= 3) {
+      if (value.trim().length) {
         const data = await fetchSuggestions(value.toLowerCase().trim(), 7);
         setSuggestions(data.map((suggestion) => suggestion.word));
       } else {
         setSuggestions([]);
       }
     }, 1000));
+  };
+
+   const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      router.push(`/word?word=${searchTerm}`);
+    }
   };
 
   return (
@@ -46,10 +53,10 @@ const Page = () => {
           type="text"
           value={searchTerm}
           onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
           placeholder="Search"
           autocomplete="off"
         />
-        {/* <button onClick={() => { }}><FaX /></button> */}
       </div>
       {suggestions.length > 0 && <div className='w-full'>
         <ul className='grid'>

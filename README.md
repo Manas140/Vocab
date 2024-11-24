@@ -1,25 +1,32 @@
-<h1 align="center">.Vocab</h1>
-<p align="center">An online word database with the aim of making learning new vocabulary easier</p>
+# .Vocab
 
-### Technologies used
+Finding words made pretty, and easy.
+
+### Technologies & APIs
+
 - NextJs
-- Tailwind
-- Vercel KV
+- Tailwind <br/><br/>
+- https://www.datamuse.com/api/
+- https://dictionaryapi.dev/
+- https://random-word-api.vercel.app/
 
 ### Setup
 
 - Clone
+
 ```
 git clone https://github.com/manas140/Vocab.git
 cd Vocab
 ```
 
 - Install
+
 ```
-yarn install
+bun install
 ```
 
 - Run
+
 ```
-yarn dev
+bun run dev
 ```

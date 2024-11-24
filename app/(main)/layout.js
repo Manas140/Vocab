@@ -1,7 +1,7 @@
 import 'server-only'
 import Search from '@/components/search';
 import Link from 'next/link';
-import { FaHeart, FaCircleInfo, FaHouse, FaMagnifyingGlass, FaGlobe, FaDownload } from 'react-icons/fa6';
+import { FaHeart, FaCircleInfo, FaHouse, FaMagnifyingGlass } from 'react-icons/fa6';
 
 export default function Layout({ children }) {
   return (<main className='h-full grid'>

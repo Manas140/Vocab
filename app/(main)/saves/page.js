@@ -21,7 +21,7 @@ export default function Page() {
     }
   }
 
-  return (<main className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:px-10">
+  return store.length? (<main className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:px-10">
     {
       [...store].reverse().map((word, i) => {
         return <div className="bg-al pr-5 rounded-lg hover:bg-hw transition-colors flex gap-3 items-center justify-between" key={i}>
@@ -33,5 +33,9 @@ export default function Page() {
         </div>
       })
     }
-  </main>)
+  </main>) : (
+    <main className='grid justify-center pt-20 text-center'>
+      <h1>Your saves are as empty as my history notebook—<br/>and trust me, that's saying something.</h1>
+    </main>
+  )
 }

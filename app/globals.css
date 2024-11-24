@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   /* background-color: black;
   color: white; */
   /* font-family: 'Dejavu Sans'; */
   height: 100vh;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
