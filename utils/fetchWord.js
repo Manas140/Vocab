@@ -34,7 +34,7 @@ export async function fetchWord(word, extra) {
   } else {
     response = await fetch(`https://api.datamuse.com/words?md=d&max=1&sp=${word}`);
     const body = await response.json();
-    console.log(body);
+
     if (body.length == 0) {
       notFound();
     }

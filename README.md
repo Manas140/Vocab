@@ -8,7 +8,8 @@ Finding words made pretty, and easy.
 - Tailwind <br/><br/>
 - https://www.datamuse.com/api/
 - https://dictionaryapi.dev/
-- https://random-word-api.vercel.app/
+- ~~https://random-word-api.vercel.app/~~
+- https://random-word-api.herokuapp.com/home
 
 ### Setup
 

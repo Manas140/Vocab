@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { fetchWord } from "@/utils/fetchWord";
 
 export default async function Home() {
-  const wordList = await fetch(`https://random-word-api.vercel.app/api?words=6`, { next: { revalidate: 60 } });
+  const wordList = await fetch(`https://random-word-api.herokuapp.com/word?number=6`, { next: { revalidate: 60 } });
   if (!wordList.ok) {
     throw new Error("Failed to fetch data");
   }
