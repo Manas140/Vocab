@@ -2,6 +2,7 @@ import 'server-only'
 import Search from '@/components/search';
 import Link from 'next/link';
 import { FaHeart, FaCircleInfo, FaHouse, FaMagnifyingGlass } from 'react-icons/fa6';
+import ThemeToggle from '@/components/themeToggle';
 
 export default function Layout({ children }) {
   return (<main className='h-full grid'>
@@ -13,6 +14,7 @@ export default function Layout({ children }) {
             <Search></Search>
             <Link href='/saves' className="bg-al p-2 rounded-full px-7 hover:bg-hw transition-colors text-base flex gap-5 items-center"><FaHeart /> Saves</Link>
             <Link href='/about' className="bg-al p-2 rounded-full px-7 hover:bg-hw transition-colors text-base flex gap-5 items-center"><FaCircleInfo /> About</Link>
+            <ThemeToggle></ThemeToggle>
           </div>
         </nav>
       </div>

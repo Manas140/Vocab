@@ -7,15 +7,15 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'bg': "#101010",
-      'fg': "#e8e3e3",
-      'al': "#181818",
-      'bg2': "#202020",
-      'hw': "#282828",
-      'fg2': "#e8e3e380",
-      'fg3': "#cccccc",
-      'ov': "#101010bf",
-      'br': '#e8e3e30f',
+      'bg': "var(--bg)",
+      'fg': "var(--fg)",
+      'al': "var(--al)",
+      'bg2': "var(--bg2)",
+      'hw': "var(--hw)",
+      'fg2': "var(--fg2)",
+      'fg3': "var(--fg3)",
+      'ov': "var(--ov)",
+      'br': 'var(--br)',
     },
     extend: {
       keyframes: {
@@ -29,7 +29,7 @@ module.exports = {
         'like': 'like 400ms ease forwards',
       },
       backgroundImage: {
-        'gradient-loading': 'linear-gradient(to bottom right, #1a1a1a, #181818)',
+        'gradient-loading': 'linear-gradient(to bottom right, var(--grad-1), var(--grad-2))',
       },
     },
   },

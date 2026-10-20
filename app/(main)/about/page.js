@@ -6,13 +6,13 @@ export default async function Page() {
   return (<section className="grid grid-cols-3 gap-7 lg:px-10">
     <section className="grid gap-5 col-span-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-1 lg:col-span-1">
       <div className="bg-[url('https://github.com/manas140.png')] bg-center rounded-lg bg-cover self-center">
-        <div className="p-10 grid bg-ov gap-1">
+        <div className="p-10 grid bg-ov gap-1 rounded-lg">
           <p className="font-light text-fg2">Built By</p>
           <header className="font-normal text-3xl">Manas</header>
         </div>
       </div>
       <div className="bg-[url('https://github.com/saimoomedits.png')] bg-center rounded-lg bg-cover self-center">
-        <div className="p-10 grid bg-ov gap-1">
+        <div className="p-10 grid bg-ov gap-1 rounded-lg">
           <p className="font-light text-fg2">Design By</p>
           <header className="font-normal text-3xl">Harry</header>
         </div>
@@ -20,7 +20,7 @@ export default async function Page() {
     </section>
     <section className="col-span-3 bg-al p-10 grid gap-5 content-start lg:col-span-2 rounded-lg">
       <header className="font-normal text-3xl">About Vocab</header>
-      <p className="text-fg2 text-xl">Vocab is an open-source word dictionary website with the aim of making searching words easier with its simple and intuitive for a smooth user interface.<br/><br/>Unlike the rest, we kept it simple.</p>
+      <p className="text-fg2 text-xl">Vocab is an open-source word dictionary website with the aim of making discovering new words and searching known ones beautiful, and pretty, and awe-full— even if at the cost of time.<br/><br/>Just tryna keep it simple, stupid.</p>
     </section>
     <section className="col-span-3 bg-al p-10 grid gap-2 content-start lg:col-span-2 rounded-lg">
       <header className="font-normal text-3xl">Issue?</header>

@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dark theme (default) */
+:root {
+  color-scheme: dark;
+  --bg: #101010;
+  --fg: #e8e3e3;
+  --al: #181818;
+  --bg2: #202020;
+  --hw: #282828;
+  --fg2: #e8e3e380;
+  --fg3: #cccccc;
+  --ov: #101010bf;
+  --br: #e8e3e30f;
+  --grad-1: #1a1a1a;
+  --grad-2: #181818;
+}
+
+/* Light theme */
+html.light {
+  color-scheme: light;
+  --bg: #ffffff;
+  --fg: #282727;
+  --fg3: #373737;
+  --fg2: #282727a0;
+  --al: #f7f7f7;
+  --bg2: #ededed;
+  --hw: #e2e2e2;
+  --br: #28272710;
+  --ov: #ffffffbf;
+  --grad-1: #f5f5f5;
+  --grad-2: #f7f7f7;
+}
+
+html.theme-snap *,
+html.theme-snap *::before,
+html.theme-snap *::after {
+  transition: none !important;
+}
+
+
 body {
   /* background-color: black;
   color: white; */
@@ -16,16 +55,16 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #101010;
+  background: var(--bg);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 0.5em;
-  background: #e8e3e31f;
+  background: color-mix(in srgb, var(--fg) 12%, transparent);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e8e3e32f;
+  background: color-mix(in srgb, var(--fg) 20%, transparent);
 }
